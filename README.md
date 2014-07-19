@@ -22,6 +22,12 @@ We were pleased to redeem the cert, and the results are [here](http://cssian.com
 
 ###Choose wisely
 
-Now you can choose: a lean UI from year's past or a snappy, colorful spin on ~2012.
+Now you can choose: a lean UI from year's past ...
+
+![JSON to Go, the original](http://www.cssian.com/jtg/img/original.png "JSON to Go")
+
+or a snappy, colorful spin on ~2013....
+
+![JSON to Go, reskinned](http://www.cssian.com/jtg/img/reskin.png "JSON to Go Pretty")
 
 "GO" in peace.
