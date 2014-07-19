@@ -1,0 +1,15 @@
+{
+  "_id": "54dd26983fc04a9f1d848d0aa1001ce2",
+  "_rev": "2-11c22114e2393287e3021c2b0da40455",
+  "data": {
+    "sampleRequestID": "1234567890",
+    "sampleType": "Flower",
+    "strainName": "Captain Banana Boat OG",
+    "customer": "HOUS",
+    "analysis": "RSS",
+    "dateDue": "2014-04-16",
+    "dateReported": "2014-04-16",
+    "RequestID": "1234567890"
+  },
+  "type": "AnalysisRequest"
+}

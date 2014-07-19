@@ -1,0 +1,92 @@
+<!-- PARTIAL:
+        Name:       home.html:
+        Use:        Provides markup for the home page
+        Version:    0.1
+-->
+
+<div class="grid no-gutters">
+    <div class="unit whole">
+        <section class="headlines">
+            <h1>JSON-to-Go</h1>
+            <h3>Translate JSON into a rough Go type definition</h3>
+        </section>
+    </div>
+</div>
+
+<div class="grid no-gutters">
+    <div class="unit whole">
+        <section class="features">
+            <ul class="ui menu horizontal float left">
+                <li ng-class="{'selected':feature.selected}"
+                    ng-repeat="feature in features"
+                    ng-click="feature.action(feature)">
+                    {{feature.name}}
+                </li>
+            </ul>
+        </section>
+    </div>
+</div>
+
+<div class="grid no-left-gutters">
+    <div class="unit two-fifths">
+
+        <section class="ui json go-type" ng-show="show.JSONPanel">
+            <input class="ui inline input" type="text" placeholder="Enter a Go type name here." ng-model="goTypeName"/>
+            <button class="ui inline button medium" ng-class="(goTypeName && jsonCode) ? 'convert' : ''" ng-click="convert()">
+                Convert
+            </button>
+            <div class="clear"></div>
+        </section>
+        <section class="animated fadeIn ui json code" ng-show="show.JSONPanel">
+            <textarea
+                class="ui textarea"
+                placeholder="Paste JSON here."
+                ng-model="jsonCode">
+            </textarea>
+        </section>
+
+        <section class="ui golang go-type" ng-show="show.GoPanel">
+            <input class="ui inline input" type="text" placeholder="You were supposed to supply a type name..." ng-model="goTypeName" disabled/>
+            <button class="ui inline button medium reset" ng-click="reset()">
+                Reset
+            </button>
+            <div class="clear"></div>
+        </section>
+        <section class="animated fadeIn ui golang code" ng-show="show.GoPanel">
+            <textarea
+                class="ui textarea"
+                placeholder="Grab the generated Go code here..."
+                ng-model="goCode"></textarea>
+        </section>
+
+    </div>
+    <div class="unit two-fifths push right">
+        <section class="meta">
+            <h5>What's This All About?</h5>
+            <p>This tool helps when you want to avoid <span class="cited"><b>interface{}</b></span> and type assertions or
+            writing definitions by hand. The translater makes some assumptions, so be sure to check the results (and then use <span class="cited"><b>go fmt</b></span>.)</p>
+            <p class="more"><a href="http://blog.golang.org/json-and-go" class="read-more">Read more about JSON and Go</a></p>
+        </section>
+
+        <section class="meta">
+            <h5>Usage</h5>
+            <p>1. Type in a name for the Go type to generate.<br/>
+            2. Paste in your JSON.<br/>
+            3. Click the <b>Convert</b> button.</br>
+            4. Grab your Go code from the <b>Golang</b> tab.<br/>
+            5. Rinse and repeat.</p>
+        </section>
+
+        <section class="meta">
+            <h5>Demo</h5>
+            <p>For a demo, use the sample JSON from the <a class="original" href="http://smartystreets.com/products/liveaddress-api" target="_api">LiveAddress API</a> from <a class="original" href="http://smartystreets.com/" target="_vendor">SmartyStreets.</a></p>
+            <p class="more"><a class="read-more" ng-click="loadDemoData()">Load some demo JSON</a></p>
+        </section>
+
+        <section class="meta">
+            <h5>Credits</h5>
+            <p>The original concept, project, and translation goodness, by <b><a class="original" href="https://github.com/mholt/json-to-go">Matthew Holt</a></b></p>
+            <p>The fork, with modern UI and behavior, by <b><a class="original" href="http://cssian.com">CSSian</a></b></p>
+        </section>
+    </div>
+</div>
