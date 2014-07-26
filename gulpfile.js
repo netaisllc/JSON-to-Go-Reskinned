@@ -2,7 +2,9 @@
 //
 //      Project: JSON-to-Go UI
 //      Date: 2014-JUL-17
-//      Gulp helpers: npm install gulp-autoprefixer gulp-cache gulp-concat gulp-imagemin gulp-jshint gulp-minify-css gulp-notify gulp-rename gulp-rimraf gulp-uglify --save-dev
+//      Gulp helpers:
+//          npm install gulp-autoprefixer gulp-cache gulp-concat gulp-imagemin gulp-jshint gulp-minify-css --save-dev
+//          npm install gulp-notify gulp-rename gulp-rimraf gulp-uglify --save-dev
 //
 var gulp = require( 'gulp' );
 
