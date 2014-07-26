@@ -1,7 +1,6 @@
 #JSON-to-Go (reskinned)
 
 (In which we apply a bit of modern UI look and behavior to a great project by another.)
-Powered by [AngularJS](http://www.angularjs.org).
 
 ###The original project
 
@@ -18,7 +17,12 @@ O the outage, O the bother: such front-end travails...
 Happily, such an award carried with it a lifetime certificate to reskin a site, no questions
 asked.
 
-We were pleased to redeem the cert, and the results are [here](http://cssian.com/jtg/index.html).
+We were pleased to redeem the cert, and the results are available at cssian.com:
+
+* [A version powered by AngularJS](http://cssian.com/jtg/angular/index.html)
+* [A version powered by jQuery](http://cssian.com/jtg/jquery/index.html)
+
+Two functionally equivalent versions were developed, one using AngularJS and the other, jQuery.
 
 ###Choose wisely
 
